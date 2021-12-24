@@ -48,6 +48,131 @@ You can choose from one of the two types:
 * An **Advanced** App provides you with a high-level scaffold for your development needs with Docker & Kubernetes manifests included
 
 
+### Frameworks
+
+To check the available frameworks to set up your application with,
+
+  ```sh
+   draftapp --help
+   ```
+   
+### Tyeps
+
+To check the available types for the frameworks to set up your application with,
+
+  ```sh
+   draftapp flask --help
+   ```
+   
+### Basic Flask Application
+
+To set up a basic Flask Application,
+
+  ```sh
+   draftapp flask -t basic -n portfolio -d /tmp/Portfolio
+   ```
+#### Tree Structure for Basic Flask Application
+  ```sh
+   Portfolio/
+├── Makefile
+├── README.md
+├── alembic
+│   ├── README
+│   ├── env.py
+│   └── script.py.mako
+├── alembic.ini
+├── bin
+│   └── portfolio-cli
+├── configs
+│   ├── gunicorn.py
+│   └── local.ini
+├── logs
+│   └── app.log
+├── portfolio
+│   ├── __init__.py
+│   ├── config.py
+│   ├── constants.py
+│   ├── manager.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── swag
+│   │   └── ping.yaml
+│   └── views.py
+└── setup.py
+   ```
+
+### Advanced Flask Application
+
+To set up an advanced Flask Application,
+
+  ```sh
+   draftapp flask -t advanced -n portfolio -d /tmp/Portfolio
+   ```
+#### Tree Structure for Advanced Flask Application
+  ```sh
+  Portfolio
+├── Dockerfile
+├── Makefile
+├── README.md
+├── alembic
+│   ├── README
+│   ├── env.py
+│   └── script.py.mako
+├── alembic.ini
+├── bin
+│   └── portfolio-cli
+├── compile.py
+├── configs
+│   ├── gunicorn.py
+│   ├── local.ini
+│   └── test.ini
+├── kubernetes_manifests
+│   ├── README.md
+│   ├── configmap.yaml
+│   ├── deployment.yaml
+│   ├── hpa.yaml
+│   ├── ingress.yaml
+│   └── service.yaml
+├── lint.py
+├── logs
+│   └── app.log
+├── portfolio
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-36.pyc
+│   │   ├── config.cpython-36.pyc
+│   │   ├── manager.cpython-36.pyc
+│   │   └── views.cpython-36.pyc
+│   ├── config.py
+│   ├── constants.py
+│   ├── exceptions.py
+│   ├── log.py
+│   ├── manager.py
+│   ├── middlewares.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── swag
+│   │   └── ping.yaml
+│   ├── utils.py
+│   ├── validators.py
+│   └── views.py
+├── portfolio.egg-info
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   ├── dependency_links.txt
+│   ├── requires.txt
+│   └── top_level.txt
+├── pytest.ini
+├── setup.py
+└── tests
+    ├── __init__.py
+    ├── conftest.py
+    └── test_views.py
+  ```
+
+
+  
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
