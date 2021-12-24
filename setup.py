@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="draftapp-ratanboddu",
-    version="0.0.2",
+    version="0.0.10",
     author="Ratan Boddu",
     author_email="ratanboddu@gmail.com",
     description="Build adaptable, scalable and production-grade web applications within seconds",
@@ -20,11 +20,14 @@ setuptools.setup(
     },
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU General Public License (GPL)",
         "Operating System :: OS Independent",
+    ],
+    install_requires=[
+        "click==8.0.3"
     ],
     python_requires=">=3.6",
     scripts=["bin/draftapp"],
-    packages=find_packages(),
+    packages=['draftapp'],
     include_package_data=True,
 )
