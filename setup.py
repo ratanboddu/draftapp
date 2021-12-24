@@ -7,8 +7,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="draftapp-ratanboddu",
-    version="0.1.1",
+    name="draftapp",
+    version="0.1.2",
     author="Ratan Boddu",
     author_email="ratanboddu@gmail.com",
     description="Build scalable production-grade web applications within seconds",
