@@ -21,7 +21,7 @@
     ·
     <a href="https://github.com/ratanboddu/draftapp/issues">Request Feature</a>
   </p>
-</div>
+</div><br />
 
 Getting Started
 ------------
