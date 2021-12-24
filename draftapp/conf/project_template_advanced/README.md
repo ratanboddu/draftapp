@@ -1,28 +1,63 @@
-# Application-Backend
+# Getting Started
 
-## virtual environment setup
-`virtualenv --python={python path} env`
+## Setting Up Virtualenv
+  ```sh
+   virtualenv --python={python path} env
+   ```
 
-## activate virtual environment
-`source env/bin/activate`
+## Activating the virtual environment
 
-##install the pip packages
-`make install`
+  ```sh
+   source env/bin/activate
+   ```
 
-## Running application
-### run flask development server (for development)
-`make run`
-### run gunicorn server (for production)
-`make gunicorn`
+## Install the required packages
 
+  ```sh
+   make install
+   ```
 
-open `http://localhost:5000/` in browser to access the application
-open `http://localhost:5000/application/api/docs#/` in browser to access Flasgger
+## Starting application server
+-------
+### Run Flask development server (for development)
+  ```sh
+   make run
+   ```
+
+### Run Gunicorn server (for production)
+  ```sh
+   make gunicorn
+   ```
+
+## Open Application in Browser
+* open `http://localhost:5000/` in browser to access the application
+* open `http://localhost:5000/application/api/docs#/` in browser to access Flasgger
 
 ### Running test cases
 
-```
+```sh
 make test  # run test cases using pytest
+```
+
+### Running Python Lint
+
+```sh
+make lint 
+```
+
+
+### Building Docker Image of Application
+
+```sh
+make docker 
+```
+
+### Deploying Application to a K8s Cluster
+
+* Navigate to `kubernetes_manifest` folder
+* Run below command
+```sh
+kubectl apply -f .
 ```
 
 ### Running docker images

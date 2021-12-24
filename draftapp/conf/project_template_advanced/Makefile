@@ -38,6 +38,9 @@ db-init:
 	SETTINGS=$(PWD)/configs/local.ini \
 	alembic init alembic
 
+docker:
+	docker build -t application:v1.0.0 .
+
 test:
 	SETTINGS=$(PWD)/configs/test.ini \
 	pytest --verbose --color=yes --cov=project_name --assert=plain --cov-report xml:coverage.xml --cov-report term-missing

@@ -1,36 +1,34 @@
-# Application-Backend
+# Getting Started
 
-## virtual environment setup
-`virtualenv --python={python path} env`
+## Setting Up Virtualenv
+  ```sh
+   virtualenv --python={python path} env
+   ```
 
-## activate virtual environment
-`source env/bin/activate`
+## Activating the virtual environment
 
-##install the pip packages
-`make install`
+  ```sh
+   source env/bin/activate
+   ```
 
-## Running application
-### run flask development server (for development)
-`make run`
-### run gunicorn server (for production)
-`make gunicorn`
+## Install the required packages
 
+  ```sh
+   make install
+   ```
 
-open `http://localhost:5000/` in browser to access the application
-open `http://localhost:5000/application/api/docs#/` in browser to access Flasgger
+## Starting application server
+-------
+### Run Flask development server (for development)
+  ```sh
+   make run
+   ```
 
-### Running test cases
+### Run Gunicorn server (for production)
+  ```sh
+   make gunicorn
+   ```
 
-```
-make test  # run test cases using pytest
-```
-
-### Running docker images
-
-```
-docker login docker_registry
-docker pull image-tag:xxxx
-docker run --publish 5000:5000 image-tag:xxxx
-```
-
-Note: replace xxxx with the version before running
+## Open Application in Browser
+* open `http://localhost:5000/` in browser to access the application
+* open `http://localhost:5000/application/api/docs#/` in browser to access Flasgger
