@@ -18,7 +18,7 @@
    ```
 
 ## Starting application server
--------
+
 ### Run Flask development server (for development)
   ```sh
    make run
@@ -60,12 +60,3 @@ make docker
 kubectl apply -f .
 ```
 
-### Running docker images
-
-```
-docker login docker_registry
-docker pull image-tag:xxxx
-docker run --publish 5000:5000 image-tag:xxxx
-```
-
-Note: replace xxxx with the version before running
