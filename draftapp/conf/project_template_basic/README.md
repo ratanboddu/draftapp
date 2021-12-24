@@ -18,7 +18,7 @@
    ```
 
 ## Starting application server
--------
+
 ### Run Flask development server (for development)
   ```sh
    make run
