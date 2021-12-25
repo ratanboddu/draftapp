@@ -23,6 +23,7 @@ setup(
         "Flask-Migrate==2.5.2",
         "alembic==1.0.11",
         "black",
+        "requests",
     ],
     scripts=["bin/project_name-cli"],
 )

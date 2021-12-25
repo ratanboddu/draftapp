@@ -81,7 +81,7 @@ def build_app(name, target, framework, type):
             os.makedirs(target_dir, exist_ok=True)
 
         for dirname in dirs[:]:
-            if dirname.startswith('.') or dirname == '__pycache__':
+            if dirname == '__pycache__':
                 dirs.remove(dirname)
 
         for filename in files:
