@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="draftapp",
-    version="0.1.2",
+    version="0.1.3",
     author="Ratan Boddu",
     author_email="ratanboddu@gmail.com",
     description="Build scalable production-grade web applications within seconds",
@@ -21,7 +21,6 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License (GPL)",
-        "Operating System :: OS Independent",
     ],
     install_requires=[
         "click==8.0.3"
