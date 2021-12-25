@@ -45,7 +45,7 @@ After you’ve successfully installed DraftApp, you’re ready to create the fir
 You can choose from one of the two types:
 
 * A **Basic** App provides you with the basic scaffold needed to get you application up and running for development
-* An **Advanced** App provides you with a high-level scaffold for your development needs with Docker & Kubernetes manifests included
+* An **Advanced** App provides you with a high-level scaffold for your development needs with Docker, Kubernetes manifests & Code Obfuscation
 
 
 ### Frameworks
