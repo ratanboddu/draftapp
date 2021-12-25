@@ -1,13 +1,4 @@
-.PHONY: clean pip install run gunicorn db-migrate db-upgrade db db-init black
-
-clean:
-	find . -type f -name "*.pyc" -delete
-	find . -type f -name "*.log" -delete
-	find . -type f -name "coverage.xml" -delete
-	find . -type d -name "*.egg-info" -exec rm -rf {} +
-	find . -type d -name __pycache__ -exec rm -rf {} +
-	find . -type d -name build -exec rm -rf {} +
-	find . -type d -name dist -exec rm -rf {} +
+.PHONY: pip install run gunicorn db-migrate db-upgrade db db-init black
 
 pip:
 	PIP_CONFIG_FILE=$(PWD)/pip.conf \
