@@ -11,11 +11,18 @@
    source env/bin/activate
    ```
 
+## Initialize git repository
+
+  ```sh
+   git init
+   ```
+   
 ## Install the required packages
 
   ```sh
    make install
    ```
+   ***Note***: Running `make install` before initializing git repository will cause 'pre-commit-config' to fail.
 
 ## Starting application server
 
