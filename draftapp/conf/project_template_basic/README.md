@@ -37,5 +37,4 @@
    ```
 
 ## Open Application in Browser
-* open `http://localhost:5000/` in browser to access the application
 * open `http://localhost:5000/application/api/docs#/` in browser to access Flasgger
