@@ -138,11 +138,6 @@ To set up an advanced Flask Application,
 │   └── app.log
 ├── portfolio
 │   ├── __init__.py
-│   ├── __pycache__
-│   │   ├── __init__.cpython-36.pyc
-│   │   ├── config.cpython-36.pyc
-│   │   ├── manager.cpython-36.pyc
-│   │   └── views.cpython-36.pyc
 │   ├── config.py
 │   ├── constants.py
 │   ├── exceptions.py
